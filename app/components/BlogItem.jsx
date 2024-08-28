@@ -14,7 +14,7 @@ const BlogItem = ({ blog }) => {
             alt="cover image"
             src={
               blog.coverImage
-                ? `http://localhost:8000/${blog.coverImage}`
+                ? `https://blogpf201-api.onrender.com/${blog.coverImage}`
                 : ImagePlaceholder
             }
             width={100}
@@ -38,7 +38,7 @@ const BlogItem = ({ blog }) => {
             <div className="flex items-center gap-x-4 mt-8">
               <div>
                 <Image
-                  src={`http://localhost:8000/${blog.author.profilePic}`}
+                  src={`https://blogpf201-api.onrender.com/${blog.author.profilePic}`}
                   alt="blog author"
                   className="rounded-full block align-middle object-cover h-10 w-10"
                   width={40}

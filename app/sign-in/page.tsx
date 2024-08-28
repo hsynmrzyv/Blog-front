@@ -30,7 +30,7 @@ const SignIn = () => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
-    const response = await fetch("http://localhost:8000/api/auth/sign-in", {
+    const response = await fetch("https://blogpf201-api.onrender.com/api/auth/sign-in", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

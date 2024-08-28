@@ -73,11 +73,14 @@ const SignUp = () => {
       formData.append("profilePic", file);
     }
 
-    const response = await fetch("http://localhost:8000/api/auth/sign-up", {
-      method: "POST",
-      body: formData,
-      credentials: "include",
-    });
+    const response = await fetch(
+      "https://blogpf201-api.onrender.com/api/auth/sign-up",
+      {
+        method: "POST",
+        body: formData,
+        credentials: "include",
+      }
+    );
 
     const data = await response.json();
 

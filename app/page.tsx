@@ -19,7 +19,7 @@ const App = () => {
 
   const getBlogs = async () => {
     const response = await fetch(
-      `http://localhost:8000/api/blog?page=${currentPage}&sort=oldest`,
+      `https://blogpf201-api.onrender.com/api/blog?page=${currentPage}&sort=oldest`,
       {
         credentials: "include",
       }
