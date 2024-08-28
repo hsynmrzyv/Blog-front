@@ -1,3 +1,5 @@
+"use client";
+
 import { RxAvatar } from "react-icons/rx";
 import Image from "next/image";
 
@@ -60,7 +62,7 @@ const Header = ({ openModal }) => {
 
           <div className="ml-4 shrink-0">
             {user.profilePic ? (
-              <Img
+              <Image
                 src={`https://blogpf201-api.onrender.com/${user.profilePic}`}
                 alt=""
                 className="w-8 h-8 rounded-full"
